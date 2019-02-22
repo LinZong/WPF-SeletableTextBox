@@ -1,0 +1,38 @@
+﻿<Window x:Class="TriggleTextBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TriggleTextBox"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <x:Array x:Key="FillListBoxArray" Type="{x:Type sys:String}">
+            <sys:String>Str1</sys:String>
+            <sys:String>Str2</sys:String>
+            <sys:String>Str3</sys:String>
+            <sys:String>Str4</sys:String>
+            <sys:String>Str5</sys:String>
+            <sys:String>Str6</sys:String>
+            <sys:String>Str7</sys:String>
+            <sys:String>Str8</sys:String>
+            <sys:String>Str9</sys:String>
+            <sys:String>Str10</sys:String>
+            <sys:String>Str11</sys:String>
+            <sys:String>Str12</sys:String>
+            <sys:String>Str13</sys:String>
+            <sys:String>Str14</sys:String>
+            <sys:String>Str15</sys:String>
+            <sys:String>Str16</sys:String>
+        </x:Array>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <local:SeletableTextBox EnableSearchListItem="True" Grid.Row="0" SeletableItems="{StaticResource ResourceKey=FillListBoxArray}"></local:SeletableTextBox>
+        
+    </Grid>
+</Window>
